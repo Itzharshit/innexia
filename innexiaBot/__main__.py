@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 INNEXIA_IMG = "https://telegra.ph/file/8b6f8f2bb4ff3912634c7.jpg"
 
 PM_START_TEXT = """
-`Heya` 🤗 `I am` **Room Butler** `your group super bot`
+`Hii` 🤗 `I am` **Room Butler** `your group super bot.`
 `I am very fast and  more efficient  I provide awesome  features which a owner will look for  filter ,warn system,note keeping system flood!`
 """
 
@@ -105,7 +105,7 @@ HELP_STRINGS = """
 
 
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
+DONATE_STRING = """Hii, glad to hear you want to donate!
  @roombutler 💕"""
 
 IMPORTED = {}
@@ -443,12 +443,12 @@ def innexia_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Lᴏɢ'ꜱ", url="https://t.me/joinchat/05BqPALqGaZiZDk1"),
-                    InlineKeyboardButton(text="Fᴇᴅ", url="https://t.me/joinchat/05BqPALqGaZiZDk1"),
+                    InlineKeyboardButton(text="Lᴏɢ'ꜱ", url="https://t.me/roombutler"),
+                    InlineKeyboardButton(text="Fᴇᴅ", url="https://t.me/roombutler"),
                  ],
                  [
                     InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/harshitshrivastavbot"),
-                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/harshitshrivastavbot"),
+                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/roombutler"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="innexia_basichelp"),
@@ -460,17 +460,12 @@ def innexia_about_callback(update, context):
     elif query.data == "innexia_credit":
         query.message.edit_text(
             text=f"<b> CREDIT FOR Room Butler DEV'S</b>\n"
-            f"\nHere Some Developers Helping in Making The Room Butler",
+            f"\nHere Developer is Helping in Making The Room Butler",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
                     InlineKeyboardButton(text="Harshit", url="t.me/harshitshrivastavbot"),
-                    InlineKeyboardButton(text="Harshit", url="t.me/harshitshrivastavbot"),
-                 ],
-                 [
-                    InlineKeyboardButton(text="Harshit", url="t.me/harshitshrivastavbot"),
-                    InlineKeyboardButton(text="Harshit", url="https://t.me/harshitshrivastavbot"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="innexia_basichelp"),
